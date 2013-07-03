@@ -1,0 +1,27 @@
+crypto,encryption,biometric,secure,security,secret,hash,entropy,fingerprint
+wireless,network
+issue,concern,threat,risk,challenge
+policy,policies,control,access,delegation,preference
+communication,telecom,audio,voice,video,surveillance,mail
+pervasive,ambient,ubiquit,space,home,distributed
+framework,architecture
+measure,metric
+web, ,
+companies,company,business
+location,gps
+tool
+law,legal,right,freedom,legislation
+health,medical,patient
+social,facebook
+meter,grid
+cloud,cluster,amazon
+mining
+anonym
+voting,vote,government
+trade-off,tradeoff,optimization
+commerce,trading
+rfid
+publish
+advert
+differential
+commodity
