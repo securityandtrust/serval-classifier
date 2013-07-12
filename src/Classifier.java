@@ -39,28 +39,23 @@ public class Classifier {
         {
             s=(String) iter.next();
             s=s.toLowerCase().trim();
-
-            temp.add(s.split("\\W"));
+            temp.add(s.split(","));
         }
         return temp;
 
     }
 
 
-    private boolean exist(String[] words, String[] category)
+    private boolean exist(String line, String[] category)
     {
-        for(int i=0;i<words.length;i++)
-        {
-            if(words[i].length()<4)
-                continue;
+        String s;
             for(int j=0;j<category.length;j++)
             {
-                if(words[i].contains(category[j]))
+                s= category[j].trim();
+                if(s.length()>1)
+                if(line.contains(s))
                     return true;
-
             }
-
-        }
         return false;
     }
 
@@ -96,14 +91,14 @@ public class Classifier {
                 catIndex=0;
                 line=(String) iterLine.next();
                 String line2=line.toLowerCase().trim();
-                String[] words = line2.split("\\W");
+                //String[] words = line2.split("\\W");
                 boolR="" ;
                 temp=false;
                 iterCat=categories.iterator();
                 while(iterCat.hasNext())
                 {
                     cat=(String[])iterCat.next();
-                    tempCat=exist(words,cat);
+                    tempCat=exist(line2,cat);
                     temp=temp||tempCat;
                     if(tempCat)
                     {

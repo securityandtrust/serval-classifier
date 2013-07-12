@@ -25,7 +25,7 @@ public class Main {
             temp.analyze();
             readline();
         } catch (Exception ex) {
-            System.out.println("An error occured...");
+            System.out.println("An error occured: " + ex.getMessage());
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
             System.out.println(ex.toString());
             readline();
